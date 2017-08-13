@@ -1,0 +1,26 @@
+{
+  "name": "ittech227/module",
+  "description": "Module does nothing. It's needed to check working of zend-component-installer with non-zend packages",
+  "type": "library",
+  "homepage": "https://github.com/ittech227/module",
+  "license": "BSD-3-Clause",
+  "require": {
+    "php": "^5.6 || ^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ittech227\\module\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ittech227\\moduleTest\\": "test/moduleTest/src/"
+    }
+  },
+  "extra": {
+    "zf": {
+      "component": "ittech227\\module",
+      "config-provider": "ittech227\\module\\ConfigProvider"
+    }
+  }
+}
